@@ -3,7 +3,7 @@ import "../style/text.css";
 const TextCard = ({text}) =>{
     return(
         <div>
-            <p>{text}</p>
+            <p className="text">{text}</p>
         </div>
     )
 }

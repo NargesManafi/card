@@ -3,7 +3,7 @@ import "../style/image.css";
 const ImageCard = ({image})=>{
     return(
         <div>
-            {image}
+            <img src={image} className="image" />
         </div>
     )
 }

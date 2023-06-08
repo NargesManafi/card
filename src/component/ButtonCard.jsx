@@ -2,8 +2,8 @@ import "../style/button.css";
 
 const ButtonCard = ({button})=>{
     return(
-        <div>
-            {button}
+        <div className="button-container">
+           <button className="button">{button}</button>
         </div>
     )
 }

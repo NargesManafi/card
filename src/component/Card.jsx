@@ -10,23 +10,15 @@ import "../style/card.css";
 
 
 
-const Card =()=>{
+const Card =({image , title ,text , button})=>{
     return(
         <div className="container">
-            <ImageCard 
-            image={<img src="../../public/2327.jpg" className="image"/>}
-            />
-            <TitleCard title={"Lizard"}/>
-            <TextCard text={<div className="text">
-                Chevrolet is an iconic American car brand known
-                for its reliable, dependable, and affordable
-                vehicles. Founded in 1911, Chevy has become
-                one of the most recognizable car brands in the
-                world.
-            </div>}/>
+            <ImageCard image={image}/>
+            <TitleCard title={title}/>
+            <TextCard text={text}/>
             <div className="button-container">
-            <ButtonCard  button={<button className="button">SHARE</button>}/>
-            <ButtonCard className="button" button={ <button className="button">LEARN MORE</button>}/>
+            <ButtonCard  className="button" button={"SHARE"}/>
+            <ButtonCard className="button" button={"LEARN MORE"}/>
             </div>
         </div>
     )
