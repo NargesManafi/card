@@ -1,0 +1,12 @@
+.button-container{
+    display: flex;
+}
+.button{
+    border: none;
+    cursor: pointer;
+    width:200px;
+    text-align: center;
+    background-color: white;
+    color: rgb(31, 167, 230);
+    
+}
